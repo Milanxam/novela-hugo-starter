@@ -5,16 +5,21 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
+  label: Contact
+- type: heading
   label: Content
 - type: document
   path: content/_index.md
   label: Home
+- type: heading
+  label: Projects
 - type: directory
-  path: content/post
-  label: Posts
+  path: content/gallary
+  label: Gallary
   create: all
   match: "**/*"
   templates:
+  - post
   - post
 - type: heading
   label: Data
